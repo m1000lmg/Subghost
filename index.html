@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SubGhost SMP | Rank Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <header class="bg-gray-800 shadow-md p-6 text-center">
+    <h1 class="text-3xl font-bold text-cyan-400">SubGhost SMP</h1>
+    <p class="text-gray-300 mt-1">Official Minecraft Rank Shop</p>
+  </header>
+
+  <main class="max-w-6xl mx-auto py-10 px-4">
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+        <h2 class="text-xl font-semibold text-cyan-300">Starter Kit</h2>
+        <p class="text-gray-400 mt-2">Basic tools and food. Great for beginners.</p>
+        <p class="mt-4 text-cyan-400 font-bold">$0</p>
+        <button onclick="buy('Starter Kit')" class="mt-4 w-full bg-cyan-400 text-black py-2 rounded-lg hover:bg-cyan-300">Buy</button>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+        <h2 class="text-xl font-semibold text-cyan-300">Iron Kit</h2>
+        <p class="text-gray-400 mt-2">Full iron armor, tools & food.</p>
+        <p class="mt-4 text-cyan-400 font-bold">$2.99</p>
+        <button onclick="buy('Iron Kit')" class="mt-4 w-full bg-cyan-400 text-black py-2 rounded-lg hover:bg-cyan-300">Buy</button>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+        <h2 class="text-xl font-semibold text-cyan-300">Combat Kit</h2>
+        <p class="text-gray-400 mt-2">Diamond sword, bow, arrows, potions.</p>
+        <p class="mt-4 text-cyan-400 font-bold">$4.99</p>
+        <button onclick="buy('Combat Kit')" class="mt-4 w-full bg-cyan-400 text-black py-2 rounded-lg hover:bg-cyan-300">Buy</button>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+        <h2 class="text-xl font-semibold text-cyan-300">Diamond Kit</h2>
+        <p class="text-gray-400 mt-2">Full enchanted diamond gear and tools.</p>
+        <p class="mt-4 text-cyan-400 font-bold">$7.99</p>
+        <button onclick="buy('Diamond Kit')" class="mt-4 w-full bg-cyan-400 text-black py-2 rounded-lg hover:bg-cyan-300">Buy</button>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+        <h2 class="text-xl font-semibold text-cyan-300">Netherite Kit</h2>
+        <p class="text-gray-400 mt-2">Full enchanted netherite set + extras.</p>
+        <p class="mt-4 text-cyan-400 font-bold">$12.99</p>
+        <button onclick="buy('Netherite Kit')" class="mt-4 w-full bg-cyan-400 text-black py-2 rounded-lg hover:bg-cyan-300">Buy</button>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6">
+        <h2 class="text-xl font-semibold text-cyan-300">VIP+ Bundle</h2>
+        <p class="text-gray-400 mt-2">Netherite kit, combat kit, rare items, custom tag.</p>
+        <p class="mt-4 text-cyan-400 font-bold">$19.99</p>
+        <button onclick="buy('VIP+ Bundle')" class="mt-4 w-full bg-cyan-400 text-black py-2 rounded-lg hover:bg-cyan-300">Buy</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-center py-6 mt-10">
+    <p class="text-gray-400">
+      Join our <a href="https://discord.gg/Afm5Y6X4cs" target="_blank" class="text-cyan-400 underline">Discord</a> to complete your purchase.
+    </p>
+  </footer>
+
+  <script>
+    function buy(kitName) {
+      alert(`To purchase the ${kitName}, please join our Discord and create a ticket.\n\nhttps://discord.gg/Afm5Y6X4cs`);
+      window.open("https://discord.gg/Afm5Y6X4cs", "_blank");
+    }
+  </script>
+
+</body>
+</html>
